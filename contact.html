@@ -2,7 +2,8 @@
 layout: default
 banner-image:
   image: '/images/dog-2.jpg'
-  blurred:
+  blurred: false
+  blurred-image: false
   position: 50% 35%
   heading:
   description:
@@ -30,21 +31,23 @@ seo:
     </div>
 </section>
 
-<!------------------------------- Contact us ------------------------------->
+<!------------------------------- Contact us phone and email ------------------------------->
+
+<!------------------------------- Contact us form ------------------------------->
 <section class="p-10p">
     <div class="grid md:grid-cols-2">
   
       <form class="p-20p">
         <h2 class="text-3xl uppercase pb-5p text-dark-green-color"> Skriv till mig! </h2>
   
-        <div class="relative z-0 w-full mb-6"> <!-- This is the name area -->
-              <input type="text" name="name" id="name" class="block py-2.5 px-0 w-full text-sm text-dark-green-color bg-transparent border-0 border-b-2 border-dark-green-color appearance-none focus:outline-none focus:ring-0 focus:border-light-green-color peer" placeholder=" " required />
-              <label for="name" class="peer-focus:font-medium absolute text-sm text-dark-green-color duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-dark-green-color peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"> Namn </label>
+        <div class="relative z-0 w-1/2 mb-6"> <!-- This is the name area -->
+              <input type="text" name="name" id="name" class="block py-2.5 px-0 w-full text-sm text-dark-green-color bg-transparent border-dark-green-color border-2 appearance-none focus:outline-none focus:ring-0 focus:border-light-green-color peer" placeholder=" " required />
+              <label for="name" class="px-2 peer-focus:px-0 peer-focus:font-medium absolute text-sm text-dark-green-color duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-dark-green-color peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"> Namn </label>
         </div>
   
-        <div class="relative z-0 w-full mb-6 group"> <!-- This is the email area -->
-            <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-dark-green-color bg-transparent border-0 border-b-2 border-dark-green-color appearance-none focus:outline-none focus:ring-0 focus:border-light-green-color peer" placeholder=" " required />
-            <label for="email" class="peer-focus:font-medium absolute text-sm text-dark-green-color  duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-dark-green-color peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"> E-post </label>
+        <div class="relative z-0 w-1/2 mb-6"> <!-- This is the email area -->
+            <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-dark-green-color bg-transparent border-dark-green-color border-2 appearance-none focus:outline-none focus:ring-0 focus:border-light-green-color peer" placeholder=" " required />
+            <label for="email" class="px-2 peer-focus:px-0 peer-focus:font-medium absolute text-sm text-dark-green-color duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-dark-green-color peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"> E-post </label>
         </div>
   
         <div class="relative mt-12"> <!-- This is the message area -->

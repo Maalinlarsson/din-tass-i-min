@@ -1,4 +1,4 @@
-/*--------------------------- Import tailwind ---------------------------*/
+/*---------------- Import tailwind ----------------*/
 /*! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com*/
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -435,6 +435,9 @@ video {
 .top-3 {
   top: 0.75rem;
 }
+.top-5 {
+  top: 1.25rem;
+}
 .-z-10 {
   z-index: -10;
 }
@@ -443,6 +446,9 @@ video {
 }
 .col-span-2 {
   grid-column: span 2 / span 2;
+}
+.col-span-1 {
+  grid-column: span 1 / span 1;
 }
 .mb-6 {
   margin-bottom: 1.5rem;
@@ -465,20 +471,17 @@ video {
 .inline-block {
   display: inline-block;
 }
+.inline {
+  display: inline;
+}
 .flex {
   display: flex;
 }
 .grid {
   display: grid;
 }
-.min-h-80 {
-  min-height: 80vh;
-}
 .min-h-90 {
   min-height: 90vh;
-}
-.min-h-100 {
-  min-height: 100vh;
 }
 .w-full {
   width: 100%;
@@ -486,6 +489,9 @@ video {
 .w-min {
   width: -moz-min-content;
   width: min-content;
+}
+.w-1\/2 {
+  width: 50%;
 }
 .max-w-fit {
   max-width: -moz-fit-content;
@@ -588,6 +594,14 @@ video {
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
 }
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
 .pb-5p {
   padding-bottom: 5%;
 }
@@ -641,6 +655,34 @@ video {
 .duration-300 {
   transition-duration: 300ms;
 }
+
+
+/*---------------- Reset ----------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/*---------------- Custom CSS ----------------*/
+html {
+    scroll-behavior: smooth; /* this enables smooth scrolling between internal links */
+  }
+  
+/*---------------- This is the blurry part of the hero-banner ----------------*/
+.blurred-background {
+  position: relative;
+  z-index: 15;
+  background-size: cover;
+  -webkit-backdrop-filter: blur(1px);
+          backdrop-filter: blur(1px); /* Adjust the blur level as needed */
+  background-color: rgba(158, 183, 157, 0.4) ;/* Adjust the alpha channel for transparency */
+}
+
+/*---------------- This is for opacity on nav when scrolling ----------------*/
+.bg-green-color-opacity {
+  background-color: rgba(50, 100, 50, 0.5); /* Set your desired opacity value */
+}
 .hover\:bg-light-green-color:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(203 215 201 / var(--tw-bg-opacity));
@@ -656,6 +698,10 @@ video {
 .focus\:border-light-green-color:focus {
   --tw-border-opacity: 1;
   border-color: rgb(203 215 201 / var(--tw-border-opacity));
+}
+.focus\:px-0:focus {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
@@ -674,6 +720,14 @@ video {
   --tw-translate-y: 0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
+.peer:-moz-placeholder-shown ~ .peer-placeholder-shown\:translate-y-2 {
+  --tw-translate-y: 0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.peer:placeholder-shown ~ .peer-placeholder-shown\:translate-y-2 {
+  --tw-translate-y: 0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
 .peer:-moz-placeholder-shown ~ .peer-placeholder-shown\:scale-100 {
   --tw-scale-x: 1;
   --tw-scale-y: 1;
@@ -687,14 +741,33 @@ video {
 .peer:focus ~ .peer-focus\:start-0 {
   inset-inline-start: 0px;
 }
+.peer:focus ~ .peer-focus\:start-2 {
+  inset-inline-start: 0.5rem;
+}
 .peer:focus ~ .peer-focus\:-translate-y-6 {
   --tw-translate-y: -1.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.peer:focus ~ .peer-focus\:-translate-y-8 {
+  --tw-translate-y: -2rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.peer:focus ~ .peer-focus\:-translate-y-7 {
+  --tw-translate-y: -1.75rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 .peer:focus ~ .peer-focus\:scale-75 {
   --tw-scale-x: .75;
   --tw-scale-y: .75;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+.peer:focus ~ .peer-focus\:px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+.peer:focus ~ .peer-focus\:px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .peer:focus ~ .peer-focus\:font-medium {
   font-weight: 500;
