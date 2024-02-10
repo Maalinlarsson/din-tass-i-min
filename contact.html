@@ -1,13 +1,13 @@
 ---
 layout: default
-banner:
-  banner-image: '/images/dog-9.jpg'
-  top-text:
-  big-text:
+banner-image:
+  image: '/images/dog-9.jpg'
+  blurred:
+  position:
+  heading:
   description:
-  button-url:
-  button-text:
-  button-color:
+  url:
+  url-text:
 seo:
   title: Contact
   description: "your description goes here"
@@ -17,7 +17,18 @@ seo:
 ---
 
 <!------------------------------- Image banner ------------------------------->
-<section class=""></section>
+<section class="bg-cover bg-center" style="background-image: url('{{ page.banner-image.image }}'); background-position:{{ page.banner-image.position }}"> 
+    <div class="grid grid-cols-5 text-white {% if page.banner-image.blurred-image == true %} blurred-background {% endif %}">
+
+        <!------ You need the min-h class on the div that's holding the text to give it space to move around ------>
+        <div class="max-w-screen-2xl min-h-80 {% if page.banner-image.blurred == true %} blurred-background {% endif %} p-15p col-span-2 rounded-tr-[65%] flex flex-col justify-center">
+            <h2 class="max-w-md text-7xl mb-6 font-cursive">  {{ page.banner-image.heading }} </h2>
+            <p class="max-w-md text-2xl font-normal">  {{ page.banner-image.description }} </p>
+            <a href="{{ page.banner-image.url }}" class="uppercase font-heading hover:bg-middle-green-color text-green-color hover:text-green-color text-lg py-2 px-7 inline-block mt-6 max-w-fit"> {{ page.banner-image.url-text }} </a>
+        </div>
+        
+    </div>
+</section>
 
 <!------------------------------- Contact us ------------------------------->
 <section class="p-10p">
