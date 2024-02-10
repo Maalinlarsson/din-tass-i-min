@@ -501,11 +501,33 @@ video {
 .border-r-2 {
   border-right-width: 2px;
 }
+.border-light-green-color {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 215 201 / var(--tw-border-opacity));
+}
+.border-dark-green-color {
+  --tw-border-opacity: 1;
+  border-color: rgb(119 140 114 / var(--tw-border-opacity));
+}
 .bg-transparent {
   background-color: transparent;
 }
+.bg-light-green-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 215 201 / var(--tw-bg-opacity));
+}
+.bg-dark-green-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(119 140 114 / var(--tw-bg-opacity));
+}
 .p-10p {
   padding: 10%;
+}
+.p-25p {
+  padding: 25%;
+}
+.p-15p {
+  padding: 15%;
 }
 .px-0 {
   padding-left: 0px;
@@ -541,8 +563,44 @@ video {
 .uppercase {
   text-transform: uppercase;
 }
+.text-dark-green-color {
+  --tw-text-opacity: 1;
+  color: rgb(119 140 114 / var(--tw-text-opacity));
+}
+.text-light-green-color {
+  --tw-text-opacity: 1;
+  color: rgb(203 215 201 / var(--tw-text-opacity));
+}
 .duration-300 {
   transition-duration: 300ms;
+}
+.hover\:bg-dark-green-color:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(119 140 114 / var(--tw-bg-opacity));
+}
+.hover\:bg-light-green-color:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 215 201 / var(--tw-bg-opacity));
+}
+.hover\:text-light-green-color:hover {
+  --tw-text-opacity: 1;
+  color: rgb(203 215 201 / var(--tw-text-opacity));
+}
+.hover\:text-dark-green-color:hover {
+  --tw-text-opacity: 1;
+  color: rgb(119 140 114 / var(--tw-text-opacity));
+}
+.focus\:border-beige-color:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(217 209 198 / var(--tw-border-opacity));
+}
+.focus\:border-dark-green-color:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(119 140 114 / var(--tw-border-opacity));
+}
+.focus\:border-light-green-color:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(203 215 201 / var(--tw-border-opacity));
 }
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
@@ -589,6 +647,14 @@ video {
 .peer:focus ~ .peer-focus\:text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+.peer:focus ~ .peer-focus\:text-light-green-color {
+  --tw-text-opacity: 1;
+  color: rgb(203 215 201 / var(--tw-text-opacity));
+}
+.peer:focus ~ .peer-focus\:text-dark-green-color {
+  --tw-text-opacity: 1;
+  color: rgb(119 140 114 / var(--tw-text-opacity));
 }
 @media (min-width: 768px) {
   .md\:grid-cols-2 {
