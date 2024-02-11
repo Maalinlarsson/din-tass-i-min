@@ -659,6 +659,10 @@ video {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
+.bg-light-green-color {
+  --tw-bg-opacity: 1;
+  background-color: rgb(203 215 201 / var(--tw-bg-opacity));
+}
 .bg-cover {
   background-size: cover;
 }
@@ -744,11 +748,24 @@ video {
   padding-top: 0px;
   padding-bottom: 0px;
 }
+.px-10p {
+  padding-left: 10%;
+  padding-right: 10%;
+}
 .pb-5p {
   padding-bottom: 5%;
 }
 .pt-0 {
   padding-top: 0px;
+}
+.pb-15p {
+  padding-bottom: 15%;
+}
+.pb-25p {
+  padding-bottom: 25%;
+}
+.pb-50p {
+  padding-bottom: 50%;
 }
 .text-center {
   text-align: center;
