@@ -2,8 +2,9 @@
 layout: default
 title: Kurser
 banner-image:
-  image: '/images/dog-9.jpg'
+  image: ''
   blurred:
+  blurred-half: false
   position:
   heading:
   description:
@@ -22,9 +23,9 @@ seo:
   <div class="max-w-screen-2xl p-5p py-0">
     <h3 class="uppercase text-4xl text-center m-0 px-5p pb-5p"> Kursutbud! </h3>
 
-    <div class="grid grid-cols-3 gap-6">
+    <div class="grid gap-4">
       {% for item in site.courses %}
-        {% include course-loop.html aspect='0.8' %}
+        {% include course-loop.html aspect='4' %}
       {% endfor %}
     </div>
 
