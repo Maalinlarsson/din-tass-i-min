@@ -18,18 +18,8 @@ seo:
 ---
 
 <!------------------------------- Image banner ------------------------------->
-<section class="bg-cover bg-center" style="background-image: url('{{ page.banner-image.image }}'); background-position:{{ page.banner-image.position }}"> 
-    <div class="grid grid-cols-5 text-white {% if page.banner-image.blurred-image == true %} blurred-background {% endif %}">
 
-        <!------ You need the min-h class on the div that's holding the text to give it space to move around ------>
-        <div class="max-w-screen-2xl min-h-90 {% if page.banner-image.blurred == true %} blurred-background {% endif %} p-15p col-span-2 rounded-tr-[65%] flex flex-col justify-center">
-            <h2 class="max-w-md text-7xl mb-6 font-cursive">  {{ page.banner-image.heading }} </h2>
-            <p class="max-w-md text-2xl font-normal">  {{ page.banner-image.description }} </p>
-            <a href="{{ page.banner-image.url }}" class="uppercase font-heading hover:bg-light-green-color text-dark-green-color hover:text-light-green-color text-lg py-2 px-7 inline-block mt-6 max-w-fit"> {{ page.banner-image.url-text }} </a>
-        </div>
-        
-    </div>
-</section>
+{% include banner.html %}
 
 <!------------------------------- Contact us ------------------------------->
 <section class="p-10p bg-white-color">
