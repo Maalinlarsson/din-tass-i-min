@@ -1,7 +1,7 @@
 ---
 layout: default
 banner-image:
-  image: '/images/dog-9.jpg'
+  image: '/images/dog-4.jpg'
   blurred:
   position:
   heading:
@@ -15,3 +15,51 @@ seo:
   social_image: "path/to/social/image.jpg"
   hide-from-google: false
 ---
+<!------------------------------- Image banner ------------------------------->
+
+{% include image-banner-html %}
+
+<!------------------------------- grid loop opening ------------------------------->
+<section>
+
+  {% for item in page.cards %}
+  <div>
+    <h2> {{ cards.heading }} </h2>
+    <p> {{ cards.description }} </p>
+  </div>
+  {% endfor %}
+
+  <a href="/courses.html"> alla kursers </a>
+
+</section>
+
+<!------------------------------- online banner ------------------------------->
+<section>
+  <div>
+    <h3> online courses</h3>
+    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! </p>
+    <a href="/online-courses.html"></a>
+  </div>
+  <div>
+    <!-- icon/image -->
+  </div>
+
+</section>
+
+<!------------------------------- short about section ------------------------------->
+
+<section class="grid grid-cols-2">
+
+  <div class="grid grid-cols-2">
+    <div>  <!-- image --> </div>
+    <div>  <!-- image --> </div>
+    <div>  <!-- image --> </div>
+    <div>  <!-- image --> </div>
+  </div>
+
+  <div>
+    <h3> vem är jag? </h3>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum nemo dignissimos corporis recusandae consequatur adipisci doloremque facere voluptatem fugiat fugit, itaque perferendis sed suscipit doloribus commodi at molestias? Labore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, sit nemo facilis sapiente alias maiores perspiciatis natus eius quaerat placeat! Id fugiat dolorem iste, impedit atque voluptas reiciendis doloremque quo.</p>
+  </div>
+
+</section>

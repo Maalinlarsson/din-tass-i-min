@@ -493,6 +493,9 @@ video {
 .min-h-90 {
   min-height: 90vh;
 }
+.min-h-50p {
+  min-height: 50%;
+}
 .w-1\/2 {
   width: 50%;
 }
@@ -502,6 +505,9 @@ video {
 .w-min {
   width: -moz-min-content;
   width: min-content;
+}
+.min-w-50p {
+  min-width: 50%;
 }
 .max-w-50p {
   max-width: 50%;
@@ -566,6 +572,12 @@ video {
 .gap-10 {
   gap: 2.5rem;
 }
+.gap-20 {
+  gap: 5rem;
+}
+.gap-40 {
+  gap: 10rem;
+}
 .rounded-full {
   border-radius: 9999px;
 }
@@ -625,6 +637,12 @@ video {
 .p-20 {
   padding: 5rem;
 }
+.p-1 {
+  padding: 0.25rem;
+}
+.p-1\.5 {
+  padding: 0.375rem;
+}
 .px-0 {
   padding-left: 0px;
   padding-right: 0px;
@@ -669,6 +687,9 @@ video {
 }
 .text-center {
   text-align: center;
+}
+.text-right {
+  text-align: right;
 }
 .font-cursive {
   font-family: Fondamento, cursive;;
