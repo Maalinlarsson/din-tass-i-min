@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Din tass i min
 banner-image:
   image: '/images/dog-4.jpg'
   blurred:
@@ -8,9 +9,19 @@ banner-image:
   description:
   url:
   url-text:
+cards:
+  - heading: Om mig
+    description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! 
+    bg-color:  
+  - heading: Mina kurser
+    description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! 
+    bg-color:
+  - heading: Info
+    description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! 
+    bg-color:    
 seo:
-  title: Contact
-  description: "your description goes here"
+  title: Din tass i min
+  description: "Jag hjälper dig att bygga en relation till din valp"
   keywords: "your, keywords, go, here"
   social_image: "path/to/social/image.jpg"
   hide-from-google: false
@@ -18,34 +29,41 @@ seo:
 <!------------------------------- Image banner ------------------------------->
 
 
-<!------------------------------- grid loop opening ------------------------------->
-<section>
+<!------------------------------- Grid loop opening ------------------------------->
+<section class="p-5p">
 
-  {% for item in page.cards %}
-  <div>
-    <h2> {{ cards.heading }} </h2>
-    <p> {{ cards.description }} </p>
+  <div class="grid grid-cols-3 gap-10 justify-between"> 
+
+    {% for item in page.cards %}
+    <div class="bg-dark-green-color p-10p">
+      <h2> {{ item.heading }} </h2>
+      <p> {{ item.description }} </p>
+    </div>
+    {% endfor %}
+
   </div>
-  {% endfor %}
 
-  <a href="/courses.html"> alla kursers </a>
+<div class="p-5">
+  <a href="/courses.html" class="inline-block text-center border border-light-green-color px-5 py-2"> alla kursers </a>
+</div>
+ 
 
 </section>
 
-<!------------------------------- online banner ------------------------------->
-<section>
+<!------------------------------- Online banner ------------------------------->
+<section class="p-5p">
   <div>
     <h3> online courses</h3>
     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! </p>
     <a href="/online-courses.html"></a>
   </div>
   <div>
-    <!-- icon/image -->
+    <!-- Icon/image -->
   </div>
 
 </section>
 
-<!------------------------------- short about section ------------------------------->
+<!------------------------------- Short about section ------------------------------->
 
 <section class="grid grid-cols-2">
 
