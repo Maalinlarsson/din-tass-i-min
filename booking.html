@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Valpkurs
 banner-image:
   image: '/images/dog-9.jpg'
   blurred:
@@ -9,6 +10,16 @@ banner-image:
   description:
   url:
   url-text:
+square:
+  - number: 1
+    description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! 
+    bg-color:  
+  - number: 2
+    description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! 
+    bg-color:
+  - number: 3
+    description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! 
+    bg-color:  
 seo:
   title: Contact
   description: "your description goes here"
@@ -16,3 +27,38 @@ seo:
   social_image: "path/to/social/image.jpg"
   hide-from-google: false
 ---
+
+<!------------------------------- This is the booking banner on the top  ------------------------------->
+<section class="">
+  <div class="bg-dark-green-color p-10p grid grid-cols-5 text-white-color uppercase">
+      <span class="col-span-1"> < </span>
+      <h3 class="col-span-3 text-center"> Boka kurs </h3>
+      <h3 class="col-span-5 text-center"> {{ page.title }} </h3>
+  </div>
+  <div class="bg-white-color p-10p"></div>
+  <div class="bg-light-green-color p-10p"></div>
+</section>
+
+<!------------------------------- This is the section with the three squares and so on  ------------------------------->
+<section class="">
+<h3> {{ page.small-text }} </h3>
+<h2> {{ page.heading }} </h2>
+<p> {{ page.description }} </p>
+
+
+<div class="grid grid-cols-3 gap-10 justify-between"> 
+
+  {% for item in page.square %}
+  <div class="">
+    <div class="bg-dark-green-color p-5p text-white-color text-center max-w-15p m-auto">
+      <span> {{ item.number }} </span>
+    </div>
+
+    <div class=""> 
+      <p class=""> {{ item.description }} </p> 
+    </div>
+  </div>
+  {% endfor %}
+ 
+</div>
+

@@ -1,0 +1,21 @@
+<!------------------------------- Contact form  ------------------------------->
+<form class="p-20p grid grid-cols-2">
+  
+    <div class="relative z-0 w-1/2 mb-6 col-span-1"> <!-- This is the name area -->
+      <input type="text" name="name" id="name" class="block py-2.5 px-0 w-full text-sm text-dark-green-color bg-transparent border-dark-green-color border-2 appearance-none focus:outline-none focus:ring-0 focus:border-light-green-color peer" placeholder=" " required />
+      <label for="name" class="px-2 peer-focus:px-0 peer-focus:font-medium absolute text-sm text-dark-green-color duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-dark-green-color peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"> Namn </label>
+    </div>
+
+    <div class="relative z-0 w-1/2 mb-6 col-span-1"> <!-- This is the email area -->
+      <input type="email" name="email" id="email" class="block py-2.5 px-0 w-full text-sm text-dark-green-color bg-transparent border-dark-green-color border-2 appearance-none focus:outline-none focus:ring-0 focus:border-light-green-color peer" placeholder=" " required />
+      <label for="email" class="px-2 peer-focus:px-0 peer-focus:font-medium absolute text-sm text-dark-green-color duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-dark-green-color peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-7"> E-post </label>
+    </div>
+
+    <div class="relative mt-12 col-span-2"> <!-- This is the message area -->
+      <textarea  name="message" id="message" class="block py-2.5 px-0 w-full text-sm text-dark-green-color bg-transparent border-2 border-dark-green-color appearance-none focus:outline-none focus:ring-0 focus:border-light-green-color peer" placeholder=" " required  rows="9"></textarea>
+      <label for="messsage" class="-top-[1.4rem] peer-focus:font-medium absolute text-sm text-dark-green-color duration-300 transform -translate-y-6 scale-75  origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-1/4 rtl:peer-focus:left-auto peer-focus:text-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75"> Meddelande </label>
+        
+      <input type="submit" value="SÄND" class="block w-min border-2 bg-dark-green-color hover:bg-light-green-color text-light-green-color hover:text-dark-green-color border-dark-green-color hover:border-light-color ml-auto mt-5p cursor-pointer px-10 py-1">
+    </div> 
+      
+</form>
