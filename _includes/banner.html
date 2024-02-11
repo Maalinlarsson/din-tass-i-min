@@ -1,6 +1,6 @@
 <!------------------------------- Image banner ------------------------------->
 <section class="bg-cover bg-center" style="background-image: url('{{ page.banner-image.image }}'); background-position:{{ page.banner-image.position }}"> 
-    <div class="grid grid-cols-5 text-white {% if page.banner-image.blurred-image == true %} blurred-background {% endif %}">
+    <div class="grid grid-cols-5 text-white {% if page.banner-image.blurred-half == true %} blurred-background {% endif %}">
 
         <!------ You need the min-h class on the div that's holding the text to give it space to move around ------>
         <div class="max-w-screen-2xl min-h-90 {% if page.banner-image.blurred == true %} blurred-background {% endif %} p-15p col-span-2 rounded-tr-[65%] flex flex-col justify-center">

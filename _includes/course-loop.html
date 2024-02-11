@@ -1,0 +1,17 @@
+<!------------------------------- This is all the different courses ------------------------------->
+<div class="bg-white">
+    <a href="{{ item.url }}">
+        <div class="bg-cover bg-center bg-dark-green-color relative" style="background-image: url('{{ item.featured-image }}'); aspect-ratio:{{ include.aspect | default: '1' }};">
+            {% if item.tag %}
+            <h3 class="bg-black text-white text-xl uppercase px-6 py-1 inline-block absolute top-2 -right-3 editable"> {{ item.tag }} </h3>
+            {% endif %}
+
+      
+            <div class="p-10">
+                <span class="bg-white-color text-dark-green-color inline-block px-2 py-1 mb-2"> Kurs </span>
+                <h4 class="uppercase mb-5 text-white-color"> {{ item.title }} </h4>
+                <p class="mb-5 text-white-color max-w-25p"> {{ item.description }} </p>
+            </div>
+        </div>
+    </a>
+  </div>
