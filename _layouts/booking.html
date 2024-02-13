@@ -1,0 +1,43 @@
+---
+layout: default
+seo:
+  title: Contact
+  description: "your description goes here"
+  keywords: "your, keywords, go, here"
+  social_image: "path/to/social/image.jpg"
+  hide-from-google: false
+---
+
+<!------------------------------- This is the booking banner on the top  ------------------------------->
+<section class="">
+  <div class="bg-dark-green-color p-10p grid grid-cols-5 text-white-color uppercase">
+      <span class="col-span-1"> < </span>
+      <h3 class="col-span-3 text-center"> Boka kurs </h3>
+      <h3 class="col-span-5 text-center"> {{ page.title }} </h3>
+  </div>
+  <div class="bg-white-color p-10p"></div>
+  <div class="bg-light-green-color p-10p"></div>
+</section>
+
+<!------------------------------- This is the section with the three squares and so on  ------------------------------->
+<section class="">
+<h3> {{ page.small-text }} </h3>
+<h2> {{ page.heading }} </h2>
+<p> {{ page.description }} </p>
+
+
+<div class="grid grid-cols-3 gap-10 justify-between"> 
+
+  {% for item in page.square %}
+  <div class="">
+    <div class="bg-dark-green-color p-5p text-white-color text-center max-w-15p m-auto">
+      <span> {{ item.number }} </span>
+    </div>
+
+    <div class="text-center"> 
+      <p class="max-w-50p"> {{ item.description }} </p> 
+    </div>
+  </div>
+  {% endfor %}
+ 
+</div>

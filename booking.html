@@ -1,25 +1,5 @@
 ---
 layout: default
-title: Valpkurs
-banner-image:
-  image: '/images/dog-9.jpg'
-  blurred:
-  blurred-half: false
-  position:
-  heading:
-  description:
-  url:
-  url-text:
-square:
-  - number: 1
-    description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! 
-    bg-color:  
-  - number: 2
-    description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! 
-    bg-color:
-  - number: 3
-    description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! 
-    bg-color:  
 seo:
   title: Contact
   description: "your description goes here"
@@ -39,26 +19,26 @@ seo:
   <div class="bg-light-green-color p-10p"></div>
 </section>
 
-<!------------------------------- This is the section with the three squares and so on  ------------------------------->
-<section class="">
-<h3> {{ page.small-text }} </h3>
-<h2> {{ page.heading }} </h2>
-<p> {{ page.description }} </p>
 
+<!------------------------------- Bokningslista?  ------------------------------->
 
-<div class="grid grid-cols-3 gap-10 justify-between"> 
+<section class="p-5p grid grid-cols-3 text-center text-3xl">
 
-  {% for item in page.square %}
-  <div class="">
-    <div class="bg-dark-green-color p-5p text-white-color text-center max-w-15p m-auto">
-      <span> {{ item.number }} </span>
-    </div>
-
-    <div class="text-center"> 
-      <p class="max-w-50p"> {{ item.description }} </p> 
-    </div>
+  <div class="col-span-3 p-5">
+    <a href="/book-valp.html" class="inline-block border border-dark-green-color px-5 py-2"> Valpkurs </a>
+    <a href="/book-unghund.html" class="inline-block border border-dark-green-color px-5 py-2"> Unghund </a>
+    <a href="/book-promenad.html" class="inline-block border border-dark-green-color px-5 py-2"> Promenad </a>
   </div>
-  {% endfor %}
- 
-</div>
 
+  <div class="col-span-3 p-5">
+    <a href="/book-tricks-1.html" class="inline-block border border-dark-green-color px-5 py-2"> Tricks 1 </a>
+    <a href="/book-forts.html" class="inline-block border border-dark-green-color px-5 py-2"> Fortsättning </a>
+    <a href="/book-tricks-1.html" class="inline-block border border-dark-green-color px-5 py-2"> Tricks 2 </a>
+  </div>
+
+  <div class="col-span-3 p-5">
+    <a href="/book-privat.html" class="inline-block border border-dark-green-color px-5 py-2"> Privat </a>
+    <a href="/book-hantering.html" class="inline-block border border-dark-green-color px-5 py-2"> Hantering </a>
+    <a href="/book-online.html" class="inline-block border border-dark-green-color px-5 py-2"> Online </a>
+  </div>
+</section>
