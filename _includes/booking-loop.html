@@ -1,0 +1,40 @@
+<!------------------------------- This is all the different courses for booking ------------------------------->
+<div class="bg-white">
+    <a href="{{ item.url }}">
+        <div class="bg-cover bg-center bg-dark-green-color relative" style="background-image: url('{{ item.featured-image }}'); aspect-ratio:{{ include.aspect | default: '1' }};">
+            {% if item.tag %}
+            <h3 class="bg-black text-white text-xl uppercase px-6 py-1 inline-block absolute top-2 -right-3 editable"> {{ item.tag }} </h3>
+            {% endif %}
+
+      
+            <div class="p-10">
+                <span class="bg-white-color text-dark-green-color inline-block px-2 py-1 mb-2"> Kurs </span>
+                <h4 class="uppercase mb-5 text-white-color"> {{ item.title }} </h4>
+                <p class="mb-5 text-white-color max-w-25p"> {{ item.description }} </p>
+            </div>
+        </div>
+    </a>
+  </div>
+
+
+<!------------------------------- Bokningslista?  ------------------------------->
+<!-- <section class="p-5p grid grid-cols-3 text-center text-3xl">
+
+    <div class="col-span-3 p-5">
+      <a href="/booking/book-valp.html" class="inline-block border border-dark-green-color px-5 py-2"> Valpkurs </a>
+      <a href="/booking/book-unghund.html" class="inline-block border border-dark-green-color px-5 py-2"> Unghund </a>
+      <a href="/booking/book-promenad.html" class="inline-block border border-dark-green-color px-5 py-2"> Promenad </a>
+    </div>
+  
+    <div class="col-span-3 p-5">
+      <a href="/booking/book-tricks-1.html" class="inline-block border border-dark-green-color px-5 py-2"> Tricks 1 </a>
+      <a href="/booking/book-forts.html" class="inline-block border border-dark-green-color px-5 py-2"> Fortsättning </a>
+      <a href="/booking/book-tricks-1.html" class="inline-block border border-dark-green-color px-5 py-2"> Tricks 2 </a>
+    </div>
+  
+    <div class="col-span-3 p-5">
+      <a href="/booking/book-privat.html" class="inline-block border border-dark-green-color px-5 py-2"> Privat </a>
+      <a href="/booking/book-hantering.html" class="inline-block border border-dark-green-color px-5 py-2"> Hantering </a>
+      <a href="/booking/book-online.html" class="inline-block border border-dark-green-color px-5 py-2"> Online </a>
+    </div>
+  </section> -->

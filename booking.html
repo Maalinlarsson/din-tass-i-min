@@ -1,7 +1,17 @@
 ---
 layout: default
+title: Bokning
+banner-image:
+  image: ''
+  blurred:
+  blurred-half: false
+  position:
+  heading:
+  description:
+  url:
+  url-text:
 seo:
-  title: Contact
+  title: Bokning
   description: "your description goes here"
   keywords: "your, keywords, go, here"
   social_image: "path/to/social/image.jpg"
@@ -20,25 +30,16 @@ seo:
 </section>
 
 
-<!------------------------------- Bokningslista?  ------------------------------->
+<!------------------------------- Preview courses booking ------------------------------->
+<section class="p-5p bg-white-color">
+  <div class="max-w-screen-2xl p-5p py-0">
+    <h3 class="uppercase text-4xl text-center m-0 px-5p pb-5p"> Kursutbud! </h3>
 
-<section class="p-5p grid grid-cols-3 text-center text-3xl">
+    <div class="grid gap-4">
+      {% for item in site.booking %}
+        {% include booking-loop.html aspect='6' %}
+      {% endfor %}
+    </div>
 
-  <div class="col-span-3 p-5">
-    <a href="/book-valp.html" class="inline-block border border-dark-green-color px-5 py-2"> Valpkurs </a>
-    <a href="/book-unghund.html" class="inline-block border border-dark-green-color px-5 py-2"> Unghund </a>
-    <a href="/book-promenad.html" class="inline-block border border-dark-green-color px-5 py-2"> Promenad </a>
-  </div>
-
-  <div class="col-span-3 p-5">
-    <a href="/book-tricks-1.html" class="inline-block border border-dark-green-color px-5 py-2"> Tricks 1 </a>
-    <a href="/book-forts.html" class="inline-block border border-dark-green-color px-5 py-2"> Fortsättning </a>
-    <a href="/book-tricks-1.html" class="inline-block border border-dark-green-color px-5 py-2"> Tricks 2 </a>
-  </div>
-
-  <div class="col-span-3 p-5">
-    <a href="/book-privat.html" class="inline-block border border-dark-green-color px-5 py-2"> Privat </a>
-    <a href="/book-hantering.html" class="inline-block border border-dark-green-color px-5 py-2"> Hantering </a>
-    <a href="/book-online.html" class="inline-block border border-dark-green-color px-5 py-2"> Online </a>
   </div>
 </section>
