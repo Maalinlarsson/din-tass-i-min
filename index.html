@@ -2,10 +2,10 @@
 layout: default
 title: Din tass i min
 banner-image:
-  image: '/images/dog-4.jpg'
-  blurred:
-  blurred-half: false
-  position:
+  image: '/images/dog-8.jpg'
+  blurred: false
+  blurred-half: true
+  position: 50% 55%
   heading:
   description:
   url:
@@ -46,7 +46,7 @@ seo:
     <div class="{% cycle 'bg-white-color', 'bg-light-green-color', 'bg-dark-green-color' %} p-10p">
       <h2 class="p-3 pb-0"> {{ item.heading }} </h2>
       <p class="p-3"> {{ item.description }} </p>
-      <a href="#" class="border border-black rounded-full px-5 py-2 inline-block text-center"> {{ item.link }} </a>
+      <a href="#" class="border border-black px-5 py-2 inline-block text-center"> {{ item.link }} </a>
     </div>
     {% endfor %}
 
