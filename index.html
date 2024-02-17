@@ -13,13 +13,18 @@ banner-image:
 cards:
   - heading: Om mig
     description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! 
-    bg-color:  
+    link: om mig
   - heading: Mina kurser
     description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! 
-    bg-color:
+    link: mina kurser
   - heading: Info
     description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! 
-    bg-color:    
+    link: info 
+image-grid:
+    img-1: /images/dog-1.jpg
+    img-2: /images/dog-2.jpg
+    img-3: /images/dog-3.jpg
+    img-4: /images/dog-4.jpg
 seo:
   title: Din tass i min
   description: "Jag hjälper dig att bygga en relation till din valp"
@@ -38,15 +43,16 @@ seo:
   <div class="grid grid-cols-3 gap-10 justify-between"> 
 
     {% for item in page.cards %}
-    <div class="bg-dark-green-color p-10p">
-      <h2> {{ item.heading }} </h2>
-      <p> {{ item.description }} </p>
+    <div class="{% cycle 'bg-white-color', 'bg-light-green-color', 'bg-dark-green-color' %} p-10p">
+      <h2 class="p-3 pb-0"> {{ item.heading }} </h2>
+      <p class="p-3"> {{ item.description }} </p>
+      <a href="#" class="border border-black rounded-full px-5 py-2 inline-block text-center"> {{ item.link }} </a>
     </div>
     {% endfor %}
 
   </div>
 
-<div class="p-5 text-center">
+<div class="p-5p pb-0 text-center">
   <a href="/courses.html" class="inline-block text-center border border-light-green-color px-5 py-2"> alla kursers </a>
 </div>
  
@@ -70,16 +76,16 @@ seo:
 
 <section class="grid grid-cols-2 gap-4 p-5p">
 
-  <div class="grid grid-cols-2 ">
-    <div class="pb-50p bg-dark-green-color">  <!-- image --> </div>
-    <div class="pb-50p bg-light-green-color">  <!-- image --> </div>
-    <div class="pb-50p bg-white-color">  <!-- image --> </div>
-    <div class="pb-50p bg-slate-400">  <!-- image --> </div>
+  <div class="grid grid-cols-2">
+    <div class=" bg-dark-green-color relative pb-100p"> <img src="{{ page.image-grid.img-1}}" alt="" class="absolute inset-0 w-full h-full object-cover">  </div>
+    <div class=" bg-light-green-color relative pb-100p">  <img src="{{ page.image-grid.img-2}}" alt="" class="absolute inset-0 w-full h-full object-cover">  </div>
+    <div class=" bg-white-color relative pb-100p">  <img src="{{ page.image-grid.img-3}}" alt="" class="absolute inset-0 w-full h-full object-cover">  </div>
+    <div class=" bg-slate-400 relative pb-100p">  <img src="{{ page.image-grid.img-4}}" alt="" class="absolute inset-0 w-full h-full object-cover"> </div>
   </div>
 
   <div class="p-5p flex flex-col justify-center">
     <h3> vem är jag? </h3>
-    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum nemo dignissimos corporis recusandae consequatur adipisci doloremque facere voluptatem fugiat fugit, itaque perferendis sed suscipit doloribus commodi at molestias? Labore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, sit nemo facilis sapiente alias maiores perspiciatis natus eius quaerat placeat! Id fugiat dolorem iste, impedit atque voluptas reiciendis doloremque quo.</p>
+    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum nemo dignissimos corporis recusandae consequatur adipisci doloremque facere voluptatem fugiat fugit, itaque perferendis sed suscipit doloribus commodi at molestias? Labore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, sit nemo facilis sapiente alias maiores perspiciatis natus eius quaerat placeat! Id fugiat dolorem iste, impedit atque voluptas reiciendis doloremque quo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem vero officia facere provident alias maiores architecto delectus, sint eius id modi fugiat aliquam, laudantium, nam qui! Fugiat quasi soluta tempore!</p>
   </div>
 
 </section>
