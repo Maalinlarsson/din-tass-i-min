@@ -21,23 +21,23 @@ seo:
 
 <!------------------------------- This is the section with the three squares and so on  ------------------------------->
 <section class="">
-<h3> {{ page.small-text }} </h3>
-<h2> {{ page.heading }} </h2>
-<p> {{ page.description }} </p>
+  <h3> {{ page.small-text }} </h3> <!-- This is the small text above the heading -->
+  <h2> {{ page.heading }} </h2> <!-- The heading itself -->
+  <p> {{ page.description }} </p> <!-- This is the description of the course -->
 
-
-<div class="grid grid-cols-3 gap-10 justify-between"> 
-
-  {% for item in page.square %}
-  <div class="">
-    <div class="bg-dark-green-color p-5p text-white-color text-center max-w-15p m-auto">
-      <span> {{ item.number }} </span>
+  <div class="grid grid-cols-3 gap-10 justify-between"> 
+    {% for item in page.square %}
+    <div class="">
+      <div class="bg-dark-green-color p-5p text-white-color text-center max-w-15p m-auto">
+        <span> {{ item.number }} </span>
+      </div>
+      <div class="text-center"> 
+        <h3> {{ item.heading }} </h3>
+        <p class="max-w-50p"> {{ item.description }} </p>
+      </div>
     </div>
-
-    <div class="text-center"> 
-      <p class="max-w-50p"> {{ item.description }} </p> 
-    </div>
-  </div>
   {% endfor %}
+
+  <div class=""></div> <!-- This will be the booking with mail popping up -->
  
 </div>
