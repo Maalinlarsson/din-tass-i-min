@@ -1,3 +1,5 @@
 collections:
   courses:
     output: true
+  booking:
+    output: true
