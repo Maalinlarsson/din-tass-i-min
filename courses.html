@@ -2,7 +2,7 @@
 layout: default
 title: Kurser
 banner-image:
-  image: '/images/dog-2.jpg'
+  image: 
   blurred:
   blurred-half: false
   position:
@@ -11,10 +11,10 @@ banner-image:
   url:
   url-text:
 small-banner-image:
-  image:
+  image: '/images/dog-18.jpg'
   blurred:
   blurred-half:
-  position:
+  position:  50% 22%
   heading:
   description:
   url:
@@ -26,11 +26,13 @@ seo:
   social_image: "path/to/social/image.jpg"
   hide-from-google: false
 ---
+<!------------------------------- Image banner ------------------------------->
+{% include small-banner.html %}
 
 <!------------------------------- Preview courses ------------------------------->
 <section class="p-5p bg-white-color">
   <div class="max-w-screen-2xl p-5p py-0">
-    <h3 class="uppercase text-4xl text-center m-0 px-5p pb-5p"> Kursutbud! </h3>
+    <h3 class="uppercase text-4xl text-center m-0 px-5p pb-5p font-heading"> Kursutbud </h3>
 
     <div class="grid gap-4">
       {% for item in site.courses %}
