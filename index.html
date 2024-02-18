@@ -10,6 +10,15 @@ banner-image:
   description:
   url:
   url-text:
+small-banner-image:
+  image: '/images/dog-8.jpg'
+  blurred: false
+  blurred-half:
+  position: 50% 55%
+  heading:
+  description:
+  url:
+  url-text:
 cards:
   - heading: Om mig
     description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! 
@@ -42,8 +51,8 @@ seo:
 
     {% for item in page.cards %}
     <div class="{% cycle 'bg-white-color', 'bg-light-green-color', 'bg-dark-green-color' %} p-10p">
-      <h2 class="p-3 pb-0"> {{ item.heading }} </h2>
-      <p class="p-3"> {{ item.description }} </p>
+      <h2 class="pb-3"> {{ item.heading }} </h2>
+      <p class="pb-3"> {{ item.description }} </p>
       <a href="#" class="border border-black px-5 py-2 inline-block text-center"> {{ item.link }} </a>
     </div>
     {% endfor %}
@@ -51,7 +60,7 @@ seo:
   </div>
 
 <div class="p-5p pb-0 text-center">
-  <a href="/courses.html" class="inline-block text-center border border-light-green-color px-5 py-2"> alla kursers </a>
+  <a href="/courses.html" class="inline-block text-center border border-light-green-color px-5 py-2"> alla kurser </a>
 </div>
  
 
