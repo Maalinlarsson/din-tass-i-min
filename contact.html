@@ -9,6 +9,15 @@ banner-image:
   description:
   url:
   url-text:
+small-banner-image:
+  image:
+  blurred:
+  blurred-half:
+  position:
+  heading:
+  description:
+  url:
+  url-text:
 seo:
   title: Contact
   description: "your description goes here"
@@ -24,22 +33,22 @@ seo:
 <section class="p-10p bg-white-color">
   <div class="grid grid-cols-4 gap-10 mb-10p"> <!-- This is the two boxes -->
 
-    <a href="tel:004746415105" class="col-start-2 col-span-1">
-      <div class=" bg-white-color border-dark-green-color border-2 min-h-30 p-15 flex flex-col text-center justify-center items-center">
+    <a href="tel:004746415105" class="col-start-2 col-span-1  text-dark-green-color hover:text-light-green-color">
+      <div class=" bg-white-color border-dark-green-color hover:border-light-green-color border-2 min-h-30 p-15 flex flex-col text-center justify-center items-center">
         <span class="pt-2"> 
           <!-- This is the phone icon -->
-          <?xml version="1.0" encoding="UTF-8"?><svg width="30px" height="30px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M18.1182 14.702L14 15.5C11.2183 14.1038 9.5 12.5 8.5 10L9.26995 5.8699L7.81452 2L4.0636 2C2.93605 2 2.04814 2.93178 2.21654 4.04668C2.63695 6.83 3.87653 11.8765 7.5 15.5C11.3052 19.3052 16.7857 20.9564 19.802 21.6127C20.9668 21.8662 22 20.9575 22 19.7655L22 16.1812L18.1182 14.702Z" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> 
+          <?xml version="1.0" encoding="UTF-8"?><svg width="30px" height="30px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M18.1182 14.702L14 15.5C11.2183 14.1038 9.5 12.5 8.5 10L9.26995 5.8699L7.81452 2L4.0636 2C2.93605 2 2.04814 2.93178 2.21654 4.04668C2.63695 6.83 3.87653 11.8765 7.5 15.5C11.3052 19.3052 16.7857 20.9564 19.802 21.6127C20.9668 21.8662 22 20.9575 22 19.7655L22 16.1812L18.1182 14.702Z" stroke="#778c72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> 
         </span>
         <p class="font-bold pt-5"> 070 123 456 789 </p>
         <p> Ring för en oförpliktande prat. </p>
       </div>
     </a>
 
-    <a href="mailto:maalinlarsson@hotmail.com" class="col-span-1">
-      <div class=" bg-white-color border-dark-green-color border-2 min-h-30 p-15 flex flex-col text-center justify-center items-center">
+    <a href="mailto:maalinlarsson@hotmail.com" class="col-span-1 text-dark-green-color hover:text-light-green-color">
+      <div class=" bg-white-color border-dark-green-color hover:border-light-green-color border-2 min-h-30 p-15 flex flex-col text-center justify-center items-center">
         <span class="pt-2"> 
           <!-- This is the mail icon -->
-          <?xml version="1.0" encoding="UTF-8"?><svg width="30px" height="30px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7 9L12 12.5L17 9" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 17V7C2 5.89543 2.89543 5 4 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z" stroke="#000000" stroke-width="1.5"></path></svg> 
+          <?xml version="1.0" encoding="UTF-8"?><svg width="30px" height="30px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7 9L12 12.5L17 9" stroke="#778c72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 17V7C2 5.89543 2.89543 5 4 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z" stroke="#778c72" stroke-width="1.5"></path></svg> 
         </span>
         <p class="font-bold pt-5"> hello@dintassimin.com </p>
         <p> Sänd ett mail för att ta kontakt. </p>
@@ -49,7 +58,7 @@ seo:
   </div>
 
   <div class="max-w-[60%] m-auto">
-    <h2 class="text-3xl uppercase pb-5p text-dark-green-color text-center"> Kontakta mig! </h2>
+    <h2 class="text-3xl uppercase pb-5p text-dark-green-color text-center pb-15p"> Kontakta mig! </h2>
 
     {% include contact-form.html %}
 

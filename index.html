@@ -20,20 +20,20 @@ small-banner-image:
   url:
   url-text:
 cards:
-  - heading: Om mig
+  - heading: Vem är jag?
     description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! 
-    link: om mig
-  - heading: Mina kurser
+    url: om mig
+  - heading: Vad erbjuder jag för kurser?
     description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! 
-    link: mina kurser
-  - heading: Info
+    url: mina kurser
+  - heading: Vad krävs av dig och din hund?
     description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! 
-    link: info 
+    url: info 
 image-grid:
-    img-1: /images/dog-1.jpg
-    img-2: /images/dog-2.jpg
-    img-3: /images/dog-3.jpg
-    img-4: /images/dog-4.jpg
+    img-1: /images/dog-26.jpg
+    img-2: /images/dog-27.jpg
+    img-3: /images/dog-28.jpg
+    img-4: /images/dog-29.jpg
 seo:
   title: Din tass i min
   description: "Jag hjälper dig att bygga en relation till din valp"
@@ -51,16 +51,17 @@ seo:
 
     {% for item in page.cards %}
     <div class="{% cycle 'bg-white-color', 'bg-light-green-color', 'bg-dark-green-color' %} p-10p">
-      <h2 class="pb-3"> {{ item.heading }} </h2>
+      <h2 class="pb-3 uppercase"> {{ item.heading }} </h2>
       <p class="pb-3"> {{ item.description }} </p>
-      <a href="#" class="border border-black px-5 py-2 inline-block text-center"> {{ item.link }} </a>
+      <a href="#" class="border border-black px-5 py-2 inline-block text-center uppercase"> {{ item.url }} </a>
     </div>
     {% endfor %}
 
   </div>
 
+<!-- This is the button to all courses -->
 <div class="p-5p pb-0 text-center">
-  <a href="/courses.html" class="inline-block text-center border border-light-green-color px-5 py-2"> alla kurser </a>
+  <a href="/courses.html" class="inline-block text-center border border-dark-green-color hover:border-light-green-color text-dark-green-color hover:text-light-green-color px-5 py-2 uppercase"> alla kurser </a>
 </div>
  
 
@@ -69,9 +70,9 @@ seo:
 <!------------------------------- Online banner ------------------------------->
 <section class="p-5p bg-white-color">
   <div class="text-center">
-    <h3> online kurser </h3>
-    <p class="px-10p py-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! </p>
-    <a href="/online-courses.html" class="inline-block text-center border border-light-green-color px-5 py-2"> Läs mer! </a>
+    <h3 class="uppercase"> online kurser </h3>
+    <p class="px-15p py-5"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis repellendus quibusdam laborum at mollitia delectus quo et sint beatae laudantium minus nemo ex, id nisi, iure inventore provident temporibus illo! </p>
+    <a href="/online-courses.html" class="inline-block text-center border border-dark-green-color hover:border-light-green-color  text-dark-green-color hover:text-light-green-color px-5 py-2 uppercase"> Läs mer! </a>
   </div>
   <div>
     <!-- Icon/image -->
@@ -90,8 +91,9 @@ seo:
   </div>
 
   <div class="p-5p flex flex-col justify-center">
-    <h3> vem är jag? </h3>
+    <h3 class="uppercase pb-5"> Min träningsfilosofi </h3>
     <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel rerum nemo dignissimos corporis recusandae consequatur adipisci doloremque facere voluptatem fugiat fugit, itaque perferendis sed suscipit doloribus commodi at molestias? Labore. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, sit nemo facilis sapiente alias maiores perspiciatis natus eius quaerat placeat! Id fugiat dolorem iste, impedit atque voluptas reiciendis doloremque quo. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem vero officia facere provident alias maiores architecto delectus, sint eius id modi fugiat aliquam, laudantium, nam qui! Fugiat quasi soluta tempore!</p>
+    <p class="pt-5"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut quia quis similique omnis ad dicta itaque quo consequatur incidunt repudiandae quod vero, fugiat dolor a sequi eius sit numquam illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, temporibus ipsum necessitatibus deserunt voluptas officia fugit soluta aspernatur eos pariatur quasi mollitia esse quam vel sunt assumenda odit, voluptatum voluptatibus? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur iusto, omnis esse numquam, cumque vero asperiores facilis eligendi cupiditate autem laborum quasi perspiciatis ducimus voluptas unde necessitatibus dolores quibusdam veritatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, distinctio. Nesciunt, delectus quas mollitia consequatur sint excepturi id officiis fugit soluta animi, unde nihil, cumque in nemo! Laboriosam, quae iusto. </p>
   </div>
 
 </section>
