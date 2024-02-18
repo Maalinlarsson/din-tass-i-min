@@ -4,7 +4,7 @@
         <div class="text-center uppercase max-w-screen-2xl mx-auto grid grid-cols-5">
     
             <div class="p-5">
-                <a href="/index.html" class="bg-white text-2xl border border-black rounded-full p-5 inline-block px-5 py-2"> logo </a>
+                <a href="/index.html" class="bg-white text-2xl border border-black rounded-full p-5 inline-block px-5 py-2 font-heading"> logo </a>
             </div>      
     
             <nav class="col-start-3 col-span-3 flex items-center justify-center">
@@ -22,7 +22,7 @@
         <div class="grid grid-cols-5 text-white {% if page.banner-image.blurred == true %} blurred-background {% endif %}">
         <!------ You need the min-h class on the div that's holding the text to give it space to move around ------>
         <div class="max-w-screen-2xl min-h-70 {% if page.banner-image.blurred-half == true %} blurred-background {% endif %} p-15p col-span-2 flex flex-col justify-center">
-            <h2 class="max-w-md text-7xl mb-6 font-cursive">  {{ page.banner-image.heading }} </h2>
+            <h2 class="max-w-xs text-7xl mb-6 uppercase">  {{ page.banner-image.heading }} </h2>
             <p class="max-w-md text-2xl font-normal">  {{ page.banner-image.description }} </p>
             <a href="{{ page.banner-image.url }}" class="uppercase font-heading hover:bg-light-green-color text-dark-green-color hover:text-light-green-color text-lg py-2 px-7 inline-block mt-6 max-w-fit"> {{ page.banner-image.url-text }} </a>
         </div>
