@@ -4,18 +4,16 @@ layout: default
 <!------------------------------- Image banner ------------------------------->
 {% include banner.html %}
 
-<!------------------------------- Image banner ------------------------------->
-<section class="bg-light-green-color p-5p">
+<!------------------------------- Content of the course ------------------------------->
+<section class="bg-light-green-color p-15p py-8">
     <div class="max-w-screen-xl">
         <div class="grid grid-cols-2">
             <div class="p-10">
                 <h2 class="text-2xl uppercase pb-5"> {{ page.title }} </h2>
                 <p class=""> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate itaque culpa cumque omnis quis natus qui laudantium blanditiis ipsum est exercitationem, veniam quam sint repudiandae quaerat quod, delectus illo perferendis. </p>
                 <h3 class="py-5"> {{ page.inside }} </h3>
-                <p> Lorem ipsum dolor sit amet </p>
-                <p> Lorem ipsum dolor sit amet </p>
-                <p> Lorem ipsum dolor sit amet </p>
-                <p> Lorem ipsum dolor sit amet </p>
+
+                {% include accordion.html  accordion-source=site.data.faqs %}
 
                 <div class="pt-5">
                     <a href="/booking.html" class="inline-block border border-dark-green-color px-5 py-2"> boka </a>
