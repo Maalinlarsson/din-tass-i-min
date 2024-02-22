@@ -7,6 +7,7 @@ banner-image:
   position: 50% 35%
   heading: Kontakt!
   description: Skriv eller ring mig för att få mer information och boka.
+  description-italic: true
   url:
   url-text:
 small-banner-image:
@@ -30,11 +31,37 @@ seo:
   {% include banner.html %}
 
 <!------------------------------- Contact us ------------------------------->
-<section class="p-10p bg-white-color">
-  <div class="grid grid-cols-4 gap-10 mb-10p"> <!-- This is the two boxes -->
+<!-- This is the contact form -->
+<section class="bg-white-color">
+
+  <div class="max-w-[60%] m-auto">
+    <h2 class="text-3xl uppercase text-dark-green-color pb-15p font-heading"> Skicka ett mail </h2>
+    <div class="col-span-3">
+      {% include contact-form.html %}
+    </div>
+  </div>
+
+  <div class="uppercase">
+    <div class="p-5p">
+      <h3 class="font-heading text-md"> Contact info </h3>
+      <a href="mailto:maalinlarsson@hotmail.com" class="block font-thin"> hello@dintassimin.com </a>
+      <a href="tel:004746415105" class="block font-thin"> 0123456789 </a>
+    </div>
+
+    <div class="p-5">
+      <h3 class="font-heading text-md"> Adress: </h3>
+      <p class="font-thin"> Hundvägen 5 </p>
+      <p class="font-thin"> Stockholm </p>
+    </div>
+  </div>  
+</section>
+
+<!-- This is the two boxes -->
+<section class="p-5p">
+  <div class="grid grid-cols-4 gap-10">
 
     <a href="tel:004746415105" class="col-start-2 col-span-1  text-dark-green-color hover:text-light-green-color">
-      <div class=" bg-white-color border-dark-green-color hover:border-light-green-color border-2 min-h-30 p-15 flex flex-col text-center justify-center items-center">
+      <div class=" bg-white border-dark-green-color hover:border-light-green-color border-2 min-h-30 p-15 flex flex-col text-center justify-center items-center">
         <span class="pt-2"> 
           <!-- This is the phone icon -->
           <?xml version="1.0" encoding="UTF-8"?><svg width="30px" height="30px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M18.1182 14.702L14 15.5C11.2183 14.1038 9.5 12.5 8.5 10L9.26995 5.8699L7.81452 2L4.0636 2C2.93605 2 2.04814 2.93178 2.21654 4.04668C2.63695 6.83 3.87653 11.8765 7.5 15.5C11.3052 19.3052 16.7857 20.9564 19.802 21.6127C20.9668 21.8662 22 20.9575 22 19.7655L22 16.1812L18.1182 14.702Z" stroke="#778c72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg> 
@@ -45,7 +72,7 @@ seo:
     </a>
 
     <a href="mailto:maalinlarsson@hotmail.com" class="col-span-1 text-dark-green-color hover:text-light-green-color">
-      <div class=" bg-white-color border-dark-green-color hover:border-light-green-color border-2 min-h-30 p-15 flex flex-col text-center justify-center items-center">
+      <div class=" bg-white border-dark-green-color hover:border-light-green-color border-2 min-h-30 p-15 flex flex-col text-center justify-center items-center">
         <span class="pt-2"> 
           <!-- This is the mail icon -->
           <?xml version="1.0" encoding="UTF-8"?><svg width="30px" height="30px" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M7 9L12 12.5L17 9" stroke="#778c72" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2 17V7C2 5.89543 2.89543 5 4 5H20C21.1046 5 22 5.89543 22 7V17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z" stroke="#778c72" stroke-width="1.5"></path></svg> 
@@ -56,17 +83,11 @@ seo:
    </a>
 
   </div>
-
-  <div class="max-w-[60%] m-auto">
-    <h2 class="text-3xl uppercase text-dark-green-color text-center pb-15p font-heading"> Skriv till mig! </h2>
-
-    {% include contact-form.html %}
-
-  </div>
 </section>
 
 <!------------------------------- Map ------------------------------->
-<section class="p-10p pt-0 bg-white-color">
+<section class="py-10p pt-0 pb-2 bg-white-color">
+    <h3 class="font-heading text-center p-5p uppercase text-dark-green-color text-3xl"> Find us on google maps! </h3>
     <div>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2043.3333586943897!2d17.89389837695342!3d59.19372442186811!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f71ba81620abf%3A0xe1ae06f2460f6dc3!2sBrantbrinks%20hundpensionat!5e0!3m2!1sno!2sno!4v1701690950136!5m2!1sno!2sno" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
