@@ -2,16 +2,16 @@
 layout: default
 title: Bokning
 banner-image:
-  image: ''
+  image: '/images/dog-13.jpg'
   blurred:
   blurred-half:
-  position:
+  position: 50% 15%
   heading:
   description:
   url:
   url-text:
 small-banner-image:
-  image: '/images/dog-25.jpg'
+  image:
   blurred:
   blurred-half:
   position:
@@ -26,15 +26,18 @@ seo:
   social_image: "path/to/social/image.jpg"
   hide-from-google: false
 ---
+<!------------------------------- Image banner ------------------------------->
+<!-- {% include banner.html %} -->
 
-{% include banner.html %}
-
-<!------------------------------- This is the booking banner on the top  ------------------------------->
+<!------------------------------- This is the booking banner on the top (colors)  ------------------------------->
 <section class="">
   <div class="bg-dark-green-color p-10p grid grid-cols-5 text-white-color uppercase">
-      <span class="col-span-1"> < </span>
+      <span class="col-span-1">  <!-- This is the arrow in the banner -->
+        <a href="/courses.html">
+        <?xml version="1.0" encoding="UTF-8"?><svg width="24px" height="24px" viewBox="0 0 24 24" stroke-width="1.5" fill="none" xmlns="http://www.w3.org/2000/svg" color="#000000"><path d="M11 6L5 12L11 18" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M19 6L13 12L19 18" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </a>
+      </span>
       <h3 class="col-span-3 text-center"> Boka kurs </h3>
-      <h3 class="col-span-5 text-center"> {{ page.title }} </h3>
   </div>
 
   <!-- <div class="bg-white-color p-10p"></div> -->  <!-- This is going to be the middle part of the top banner (just color) -->
@@ -48,7 +51,7 @@ seo:
 
     <div class="grid gap-4">
       {% for item in site.booking %}
-        {% include booking-loop.html aspect='6' %}
+        {% include booking-loop.html aspect='12' %}
       {% endfor %}
     </div>
 
