@@ -30,7 +30,7 @@ module.exports = {
       colors: {
         'light-green-color': '#cbd7c9',
         'dark-green-color': '#778c72',
-        'beige-color': '#d9d1c6',
+        'beige-color': '#ede8e8',
         'white-color': '#f8f6f6'
         },
       lineHeight: {

@@ -3,13 +3,13 @@
 
     {% for item in include.accordion-source %}
 
-        <div class="relative border-t border-dark-green-color text-dark-green-color">
+        <div class="relative border-t border-dark-green-color">
 
-            <button type="button" class="py-6 block w-full" 
+            <button type="button" class="py-5 block w-full" 
                     @click="selected !== {{ forloop.index }} ? selected = {{ forloop.index }} : selected = null">
                 <div class="flex items-center justify-between">
-                    <h4 class="mb-0 uppercase tracking-wide font-heading font-bold text-md"> 
-                        <span class="font-normal text-dark-green-color text-xl mr-2 px-3 py-3">
+                    <h4 class="mb-0 uppercase tracking-wide font-heading font-semibold text-md"> 
+                        <span class="text-md mr-3 px-3 py-3">
                             {% if forloop.index < 10 %}0{% endif %}{{ forloop.index }}.
                         </span> 
                         {{ item.question }} 
